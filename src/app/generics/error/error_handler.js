@@ -26,6 +26,7 @@ module.exports = (e) => {
       }
     case 'BadRequestError':
     case 'NotFoundError':
+    case 'Unauthorized':
       return e
     default:
       console.log(e)
