@@ -1,0 +1,37 @@
+{
+  "name": "job_desc",
+  "version": "1.0.0",
+  "description": "Backend app for showing simple job desc",
+  "main": "index.js",
+  "scripts": {
+    "create-extension": "node src/data/database/create-extensions.js",
+    "seed": "sequelize db:seed:all --debug",
+    "migrate": "sequelize db:migrate --debug",
+    "watch": "pm2-runtime start development.config.js",
+    "start": "pm2-runtime start production.config.js",
+    "development": "yarn run create-extension && yarn run migrate && yarn run watch",
+    "production": "yarn run create-extension && yarn run migrate && yarn start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bayuubay/job_desc.git"
+  },
+  "author": "bayuubay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bayuubay/job_desc/issues"
+  },
+  "homepage": "https://github.com/bayuubay/job_desc#readme",
+  "dependencies": {
+    "axios": "^1.3.3",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.0",
+    "luxon": "^3.2.1",
+    "morgan": "^1.10.0",
+    "pg": "^8.9.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.28.0"
+  }
+}
