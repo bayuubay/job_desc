@@ -16,5 +16,14 @@ router.get('/list', auth, async(req, res, next) => {
   }
 })
 
+router.get('/:id', auth, async(req, res, next) => {
+  try {
+    const data = await job.detail({params: req.params})
+    res.status(200).json(data)
+  } catch (error) {
+    next(error)
+  }
+})
+
 
 module.exports = router

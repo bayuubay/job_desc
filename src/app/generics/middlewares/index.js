@@ -6,7 +6,7 @@ module.exports = {
   auth: async (req, res, next) => {
     try {
       if (!req.headers || !req.headers.authorization) {
-        error({ name: 'TokenRequiredError', code: 400, message: 'Token is required.' })
+        error({ name: 'Unauthorized', code: 401, message: 'Token is required.' })
       }
       const authorization = req.headers.authorization
       const token = authorization.split(' ')[1]
