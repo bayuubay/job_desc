@@ -10,7 +10,7 @@
     "watch": "pm2-runtime start development.config.js",
     "start": "pm2-runtime start production.config.js",
     "development": "yarn run create-extension && yarn run migrate && yarn run watch",
-    "production": "yarn run create-extension && yarn run migrate && yarn run seed && yarn start"
+    "production": "yarn run create-extension && yarn run migrate && yarn start"
   },
   "repository": {
     "type": "git",
