@@ -1,0 +1,19 @@
+{
+  "name": "job_desc",
+  "version": "1.0.0",
+  "description": "Backend app for showing simple job desc",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bayuubay/job_desc.git"
+  },
+  "author": "bayuubay",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bayuubay/job_desc/issues"
+  },
+  "homepage": "https://github.com/bayuubay/job_desc#readme"
+}
